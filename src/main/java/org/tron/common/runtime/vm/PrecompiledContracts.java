@@ -196,10 +196,6 @@ public class PrecompiledContracts {
     if (address.equals(altBN128PairingAddr)) {
       return altBN128Pairing;
     }
-    //TODO:Add Proposal Control Here
-//    if (address.equals(multiValidateSignAddr) && VMConfig.allowTvmSolidity0_5_10()) {
-//      return multiValidateSign;
-//    }
 
     if (VMConfig.allowTvmSolidity0_5_10() && address.equals(multiValidateSignAddr)) {
       return multiValidateSign;
